@@ -1,0 +1,9 @@
+USE master;
+GO
+EXEC sp_attach_db @dbname = N'StackOverflow2013',
+    @filename1 = N'C:\SQL2022\StackOverflow2013_1.mdf',
+	@filename2 = N'C:\SQL2022\StackOverflow2013_2.ndf',
+	@filename3 = N'C:\SQL2022\StackOverflow2013_3.ndf',
+	@filename4 = N'C:\SQL2022\StackOverflow2013_4.ndf',
+    @filename5 = N'C:\SQL2022\StackOverflow2013_log.ldf';
+GO
